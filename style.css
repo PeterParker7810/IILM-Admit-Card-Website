@@ -1,0 +1,177 @@
+body {
+  display: flex;
+  align-items: flex-start; 
+  justify-content: flex-start;
+  background-color: rgb(0, 0, 0);
+}
+
+.container {
+  border: 2px solid black;
+  width: 99vw;
+  height: 97vh;
+  display: flex;
+  align-items: center;
+  background: url('Greater-Noida.jpg');
+  background-size: cover;
+}
+
+.container1 {
+  width: 86vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sliders {
+  background-color: aliceblue;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 8vw;       
+  height: 57vh;        
+  margin: 4px;
+  margin-bottom: 130px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.slider-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin:5px;
+}
+
+.slider-item {
+  border: 2px solid black;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  padding: 6px;
+  background-color: white;
+}
+
+.slider-item:hover {
+  background-color: lightgray;
+}
+
+.logo-image {
+  border-radius: 100px;
+  height: 15vh;
+  width: auto;
+  background: url('images.jpeg');
+  background-size: cover;
+  margin-bottom: 20px;
+}
+
+.admit-img {
+  height: 10vh;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  border-radius: 10px;
+  width: 20vw;
+  height: 5vh;
+}
+
+.input-box::placeholder {
+  padding-left: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.admit-card-box {
+  border: 2px solid black;
+  border-radius: 30px;
+  background-color: white;
+  margin-bottom: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  width: 35vw;
+  gap: 20px;
+}
+
+.admit-btn {
+  border-radius: 10px;
+  background-color: blue;
+  color: white;
+  height: 5vh;
+}
+
+.admit-btn:hover {
+  background-color: red;
+  transform: scale(1.2);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+@media (max-width: 510px) {
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    height: 90vh;
+    width: auto;   
+    background-size: cover; 
+    background: url('Greater-Noida.jpg');  
+    background-size: cover;  
+  }
+
+  .container1 {
+    height: 50vh;
+  }
+
+  .admit-card-box {
+    width: 80vw;        
+    height: 40vh;       
+    margin: 0 auto;    
+  }
+
+  .sliders {
+    width: max-content;        
+    height: 4vh;
+    margin: 7px;
+    margin-top: 50px;
+  }
+
+  .slider-box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 12px;                  
+  }
+
+  .slider-item {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.5rem;   
+    padding: 4px;
+    margin: 1px;               
+  }
+
+  .admit-img {
+    height: 7vh;
+    width: auto;
+  }
+
+  .input-box {
+    border-radius: 10px;
+    width: 50vw;
+    height: 3vh;
+  }
+}
